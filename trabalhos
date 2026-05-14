@@ -1,1 +1,26 @@
+inteiro n1=0
+      
+      enquanto(n1<=10){
+      escreva("\n",n1)
+      n1= n1+1
+      }
+
+
+
+inteiro n1=10
+      enquanto(n1>=1){
+      escreva("\n",n1)
+      n1= n1-1
+      }
+
+
+
+ inteiro n1=1
+      enquanto(n1<=5){
+      escreva("\n algoritimo ",n1)
+      n1= n1+1
+      }
+
+
+
 
