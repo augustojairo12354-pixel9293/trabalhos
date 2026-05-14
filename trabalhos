@@ -1,3 +1,4 @@
+Questão 1
 inteiro n1=0
       
       enquanto(n1<=10){
@@ -6,7 +7,7 @@ inteiro n1=0
       }
 
 
-
+Questão 2
 inteiro n1=10
       enquanto(n1>=1){
       escreva("\n",n1)
@@ -14,12 +15,52 @@ inteiro n1=10
       }
 
 
-
+Questão 3
  inteiro n1=1
       enquanto(n1<=5){
       escreva("\n algoritimo ",n1)
       n1= n1+1
       }
+
+
+Questão 5
+real numero, contador= 1, soma= 0
+    
+     enquanto(contador<=4){
+      escreva("\n Qual a nota do aluno?  \n")
+      leia (numero)
+      contador = contador+1
+      soma = soma + numero
+        
+        escreva("\nO resultado é:  ", soma/4)
+
+
+
+Questão 4
+inteiro numero, contador= 1, soma= 0
+    
+     enquanto(contador<=5){
+      escreva("\n Qual seu número?  \n")
+      leia (numero)
+      contador = contador+1
+      soma = soma + numero
+        
+        escreva("\nO resultado é:  ", soma)
+     }
+
+
+
+Questão 6
+
+
+
+
+
+
+
+
+
+
 
 
 
