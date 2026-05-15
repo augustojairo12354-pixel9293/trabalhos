@@ -50,8 +50,31 @@ inteiro numero, contador= 1, soma= 0
 
 
 
-Questão 6
+Questão 7
+inteiro numero, soma=0, contador=1
+    escreva("qual seu numero?  \n")
+    leia (numero)
+    enquanto((numero!=0) e (contador<=10)){
+    soma=soma+numero
+    contador= contador+1
+    escreva("digite seu numero:  \n")
+    leia(numero)
+    }
+    escreva("\n soma total:  ", soma)
 
+
+Questão 8
+
+real senha, contador=1
+     escreva("qual a senha:  ")
+     leia(senha)
+     enquanto((senha !=1234) e (contador<=10000)){
+      contador= contador +1
+     escreva("\n senha incorreta!")  
+     escreva("\nqual sua senha:  ")
+     leia(senha)
+     
+     }
 
 
 
