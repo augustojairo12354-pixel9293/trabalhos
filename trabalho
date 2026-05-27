@@ -1,0 +1,103 @@
+
+Questão 1
+funcao inicio() {
+    inteiro n1, n2, soma=0
+    escreva("Qual seu número? \n")
+    leia(n1)
+    escreva("Qual seu número? \n")
+    leia(n2)
+    escreva("o valor trocado fica:   ",n2)
+    
+    
+    escreva("\no valor trocado fica:   ",n1)
+
+
+
+Questão 2
+ inteiro n1, n2, soma
+    escreva("Qual seu número? \n")
+    leia(n1)
+    escreva("Qual seu número? \n")
+    leia(n2)
+    soma=n1+n2
+    
+    escreva("A quadrado da soma é:  ", soma*soma)
+
+
+
+Questão 3
+inteiro n1, n2
+    escreva("Qual é sua idade?\n")
+    leia (n1)
+    n1=n1*365
+    escreva("sua idade em dias é:   ", n1)
+    n2=n1*24
+    escreva("\nsua idade em horas é:  ", n2)
+
+
+
+
+Questão 4
+     inteiro n1, n2
+    escreva("Qual é seu salário?\n")
+    leia (n2)
+    n1=n2*(1/10)
+    escreva("Seu reajuste é: ", n1+n2) 
+
+
+
+
+Questão 6
+real n1,n2,n3
+  escreva("qual o número? \n") 
+  leia(n1)
+   escreva("qual o número? \n") 
+  leia(n2)
+   escreva("qual o número? \n") 
+  leia(n3)
+  
+     se (n1>n2>n3){
+    escreva("\no número ",n3," é maior que ",n2, " é maior que ",n1)
+     }
+       senao se(n1>n3>n2){
+       escreva("\no número ",n1," é maior que ",n3, " é maior que ",n1 )
+       }
+         senao se(n2>n1>n3){
+          escreva("\no número ",n3," é maior que ",n1, " é maior que ",n1 )
+        }
+           senao se(n2>n1>n3){
+           escreva("\no número ",n3," é maior que ",n1, " é maior que ",n2 )
+          }
+             senao se(n2>n1>n3){
+             escreva("\no número ",n3," é maior que ",n1, " é maior que ",n2 )
+            }
+              senao se(n2>n1>n3){
+               escreva("\no número ",n3," é maior que ",n1, " é maior que ",n2 )
+             }    
+    senao se(n2>n1>n3){
+     escreva("\no número ",n3," é maior que ",n1, " é maior que ",n2 )
+    }   
+
+(OBS: não to completo, fiquei p da vida e parei)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
