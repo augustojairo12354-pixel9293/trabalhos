@@ -1,0 +1,107 @@
+Questão 1
+programa {
+  funcao inicio() {
+    inteiro matri
+    real nota
+    para (inteiro i=1;i<=75;i++) {
+    escreva("\nmatricula:  ")
+    leia (matri)
+    escreva("Nota:  ")
+    leia (nota)
+    se (nota>=0 e nota<=4.9){
+    escreva ("Conceito D")
+     }senao se(nota>=5 e nota<=6.9){
+      escreva("Conceito C")
+    }senao se (nota>=7 e nota<=8.9){
+      escreva("Conceito B")
+    }senao se (nota>=9 e nota<=10){
+      escreva("conceito A")
+    }
+  } 
+
+
+
+
+Questão 2
+cadeia olhos, sexo , cabelos
+  inteiro idade, maior_idade=0, quant_espec
+   para (inteiro i=1;i<=500;i++){
+   escreva("\n Entrevistados ", i ," de 500\n")
+   escreva("Sexo M/F: ")
+   leia(sexo)
+   escreva("\nCor dos olhos (A- para azul, V- para verde, C- para castanhos)\n")
+   leia(olhos)
+   escreva("\nCor dos cabelos (L-louro, C-castanhos,P-preto)\n")
+   leia(cabelos)
+   escreva("\nqual sua idade?\n")
+   leia(idade)
+     se (idade>maior_idade){
+      maior_idade= idade
+     }
+       senao se(sexo=="F" e idade>=18 e idade<=35 e olhos=="V" e cabelos=="L"){
+        quant_espec++  
+      }
+   }
+
+
+
+Questão 3
+inteiro i, nfilhos, ttfilhos = 0, contAte100 = 0
+  real sala,ttsala = 0, smaior = 0
+
+   para (i = 1; i <= 5; i++) {
+     escreva("qual seu salário?\n")
+     leia(sala)
+     escreva("quantos filhos tens?\n")
+     leia(nfilhos)
+  ttsala =ttsala + sala
+    ttfilhos = ttfilhos + nfilhos
+      se (sala > smaior) {
+       smaior = sala
+      }
+
+      se (sala <= 100) {
+       contAte100++
+      }
+  }
+
+   escreva("\n A média salarial é: ",ttsala / 5, "\n")
+   escreva("\n A média de filhos é: ",ttfilhos / 5.0, "\n")
+   escreva("O maior salário é: ",smaior, "\n")
+   escreva("Pessoas que recebem até 100 reais: ",(contAte100 / 5.0) * 100, "%")
+
+
+
+Questão 4
+ real chico = 1.50, ze = 1.10
+  inteiro anos = 0
+
+    enquanto (ze <= chico) {
+      chico = chico + 0.02
+      ze = ze + 0.03
+      anos++
+    }
+     escreva("vai levar ", anos, " anos para que Zé seja maior que Chico.")
+
+
+
+
+Questão 6
+ inteiro i, valor, maior, menor
+
+ leia(valor)
+ maior = valor
+ menor = valor
+  para (i = 2; i <= 50; i++) {
+      leia(valor)
+      se (valor > maior) {
+         maior = valor
+      }
+        se (valor < menor) {
+         menor = valor
+        }
+  }
+
+        escreva(maior, "\n", menor)
+
+
