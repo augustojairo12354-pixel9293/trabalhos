@@ -1,0 +1,118 @@
+Questão 1
+  real notas[5]
+		inteiro i
+
+para (i = 0; i < 5; i++){
+			escreva("Digite a nota do aluno ", i + 1, ": ")
+			leia(notas[i])
+		}
+		
+escreva("\n--- NOTAS ARMAZENADAS ---\n")
+		para (i = 0; i < 5; i++){
+			escreva("Nota do aluno ", i + 1, ": ", notas[i], "\n")
+		}
+
+
+
+Questão 2
+ real notas[10]
+		real soma = 0.0
+		real media, maior_nota, menor_nota
+		inteiro i
+
+		para (i = 0; i < 10; i++){
+			escreva("Digite a nota do aluno ", i + 1, ": ")
+			leia(notas[i])
+      limpa()
+			soma = soma + notas[i] 
+
+			se (i == 0)
+			{
+				maior_nota = notas[i]
+				menor_nota = notas[i]
+			}
+       senao{
+		      se (notas[i] > maior_nota){
+				  	maior_nota = notas[i]
+          }
+				    se (notas[i] < menor_nota){
+					    menor_nota = notas[i]
+				    }
+			 }
+		}
+
+		media=soma/10
+
+		escreva("\n------- Resultados -------\n")
+		escreva("Média da turma: ", media, "\n")
+		escreva("Maior nota: ", maior_nota, "\n")
+		escreva("Menor nota: ", menor_nota, "\n")
+
+
+
+Questão 3
+real temperaturas[3][4]
+		inteiro cidade, dia
+
+		para (cidade = 0; cidade < 3; cidade++){
+			para (dia = 0; dia < 4; dia++){
+				escreva("Digite a temperatura da Cidade ", cidade + 1, " no Dia ", dia + 1, ": ")
+				leia(temperaturas[cidade][dia])
+			}
+			escreva("\n") 
+		}
+
+		escreva("------- MATRIZ DE TEMPERATURAS -------\n")
+		para (cidade = 0; cidade < 3; cidade++){
+			escreva("Cidade ", cidade + 1, ": ")
+			para (dia = 0; dia < 4; dia++)
+			{escreva(temperaturas[cidade][dia], "°C   ")}
+			escreva("\n") 
+		}
+
+
+
+
+
+Questão 4
+programa{
+	funcao 
+  
+  real calcularMedia(real n1, real n2){
+		real resultado
+		resultado = (n1 + n2) / 2
+		retorne resultado
+	}
+	    funcao inicio(){
+		   real nota1, nota2, mediaFinal
+		   escreva("Digite a primeira nota: ")
+	     leia(nota1)
+		
+		   escreva("Digite a segunda nota: ")
+		   leia(nota2)
+
+		   mediaFinal = calcularMedia(nota1, nota2)
+
+		   escreva("\nA média aritmética é: ", mediaFinal, "\n")
+	   }
+}
+
+
+
+
+Questão 5
+ real numero
+		real arredondado, raiz_quadrada, elevado_quadrado
+
+		escreva("Digite um número real (ex: 4.56): ")
+		leia(numero)
+
+		arredondado = mat.arredondar(numero, 2)  
+		raiz_quadrada = mat.raiz(numero, 2.0)    
+		elevado_quadrado = mat.potencia(numero, 2.0) 
+
+		escreva("\n------- RESULTADOS -------")
+		escreva("\nValor original: ", numero)
+		escreva("\nValor arredondado: ", arredondado)
+		escreva("\nRaiz quadrada: ", raiz_quadrada)
+		escreva("\nElevado ao quadrado: ", elevado_quadrado, "\n")
