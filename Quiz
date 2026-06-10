@@ -1,0 +1,316 @@
+programa {
+
+  inclua biblioteca Util --> u 
+  
+  funcao inicio()
+  {
+    
+    inteiro opcao = 0, acertos, pontuacao, erros ,vidaF , vidaG , i
+   
+    cadeia resposta 
+
+    enquanto (opcao != 3){
+
+      escreva("=========================================\n")
+      escreva("        QUIZ INTERATIVO: DRAGON BALL     \n")
+      escreva("=========================================\n")
+      escreva("1 -> Iniciar Quiz\n")
+      escreva("2 -> Ver Regras\n")
+      escreva("3 -> Sair\n")
+      escreva("-----------------------------------------\n")
+      escreva("Escolha uma opção: ")
+      leia(opcao)
+      limpa()
+      
+    
+      escolha (opcao){
+
+        caso 1:
+          
+          
+          vidaF = 100
+          vidaG = 100
+          acertos = 0
+          erros = 0
+          pontuacao = 0
+          
+          escreva("Freeza está se aproximando...\n")
+          u.aguarde(000)
+          escreva("Rapido!\n")
+          u.aguarde(000)
+          escreva("Responda as perguntas corretamente para ajudar Goku na batalha.\n") 
+          u.aguarde(500)
+          limpa()
+
+          
+
+          escreva("==. .===   ===.  .===   =    =  =.    =  =====   .==.    .==     \n")
+          escreva("==' :===   = =' =   ==. =    =  = '=. =    =    .====.     =     \n")
+          escreva("=   '===   = '=   ==='   '=='   =    '=    =    =    =    ===       \n")
+
+          escreva("-----------------------------------------")
+          escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+          escreva("-----------------------------------------\n")
+      
+          escreva("Qual é o nome do planeta natal dos Saiyajins?\n") 
+          escreva("A) Planeta Namekusei\n")
+          escreva("B) Planeta Vegeta\n")
+          escreva("C) Planeta Terra\n")
+          escreva("D) Planeta Sadala\n")
+          escreva("\nSua resposta: ")
+          leia(resposta)
+          
+          
+          se (resposta == "B" ou resposta == "b"){ 
+
+            escreva("\nCORRETO! O Planeta Vegeta é a terra natal deles.\n")
+
+            acertos = acertos + 1
+
+            u.aguarde(3000)
+            limpa()
+
+            para(i = 0; i < 4; i++){
+              escreva("-----------------------------------------")
+              escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+              escreva("-----------------------------------------\n")
+              u.aguarde (1000)
+
+              vidaF = vidaF - 5
+
+              limpa()
+            }
+
+            escreva("-----------------------------------------")
+            escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+            escreva("-----------------------------------------\n")
+            u.aguarde (1000)
+
+            escreva("Freeza - Não vai ficar assim...")
+            u.aguarde (2000)
+
+            limpa()
+          }
+          senao 
+          {
+            escreva("\nERRADO! A resposta correta era a alternativa B.\n")
+
+            erros = erros + 1
+
+            u.aguarde (3000)
+            limpa()
+
+            para(i = 0; i < 4; i++){
+              escreva("-----------------------------------------")
+              escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+              escreva("-----------------------------------------\n")
+              u.aguarde (1000)
+
+              vidaG = vidaG - 5
+
+              limpa()
+            }
+            escreva("-----------------------------------------")
+            escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+            escreva("-----------------------------------------\n")
+            u.aguarde (1000)
+
+            escreva("Goku - Ele é muito forte!\n")            
+            u.aguarde (1500)
+
+            escreva("Freeza - Você nunca vai me vencer...")
+            u.aguarde (2500)
+            limpa()
+            
+          }
+          
+     
+          
+        
+          escreva("==. .===   ===.  .===   =    =  =.    =  =====   .==.    ===.     \n")
+          escreva("==' :===   = =' =   ==. =    =  = '=. =    =    .====.   .==='     \n")
+          escreva("=   '===   = '=   ==='   '=='   =    '=    =    =    =   '===      \n")
+
+          escreva("-----------------------------------------")
+          escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+          escreva("-----------------------------------------\n")
+      
+          escreva("Quantas Esferas do Dragão são necessárias para invocar o Shenlong?\n") 
+          escreva("A) 5\n")
+          escreva("B) 6\n")
+          escreva("C) 7\n")
+          escreva("D) 8\n")
+          escreva("\nSua resposta: ")
+          leia(resposta)
+          
+          se (resposta == "C" ou resposta == "c"){ 
+
+            escreva("\nACEITOU EM CHEIO! São necessárias as 7 esferas para realizar um desejo\n")
+
+            acertos = acertos + 1
+
+            u.aguarde(3000)
+            limpa()
+
+            para(i = 0; i < 4; i++){
+              escreva("-----------------------------------------")
+              escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+              escreva("-----------------------------------------\n")
+              u.aguarde (1000)
+
+              vidaF = vidaF - 5
+
+              limpa()
+            }
+
+            escreva("-----------------------------------------")
+            escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+            escreva("-----------------------------------------\n")
+            u.aguarde (1000)
+
+            escreva("Freeza - Não vai ficar assim...")
+            u.aguarde (2000)
+
+            limpa()
+          }
+          senao 
+          {
+            escreva("\nERROU O ATAQUE! A resposta correta era a alternativa C.\n")
+
+            erros = erros + 1
+
+            u.aguarde (3000)
+            limpa()
+
+            para(i = 0; i < 4; i++){
+              escreva("-----------------------------------------")
+              escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+              escreva("-----------------------------------------\n")
+              u.aguarde (1000)
+
+              vidaG = vidaG - 5
+
+              limpa()
+            }
+            escreva("-----------------------------------------")
+            escreva("\nFreeza: ", vidaF, "%   ", "VS   Goku: ", vidaG, "%\n")
+            escreva("-----------------------------------------\n")
+            u.aguarde (1000)
+
+            escreva("Goku - Ele é muito forte!\n")            
+            u.aguarde (1500)
+
+            escreva("Freeza - Você nunca vai me vencer...")
+            u.aguarde (2500)
+            limpa()
+            
+          }
+
+         
+
+          escreva("PERGUNTA 3: Quem matou o vilão Cell na saga dos Androides?\n")
+          escreva("A) Goku\n")
+          escreva("B) Vegeta\n")
+          escreva("C) Trunks\n")
+          escreva("D) Gohan\n")
+          escreva("\nSua resposta: ")
+          leia(resposta)
+          
+          se (resposta == "D" ou resposta == "d") 
+          {
+            escreva("\nCORRETO! Gohan derrotou Cell usando o Kamehameha Pai e Filho.\n")
+            acertos = acertos + 1
+          }
+          senao 
+          {
+            escreva("\nERRADO! A resposta correta era a alternativa D.\n")
+            erros = erros + 1
+          }
+          u.aguarde(2500)
+          limpa()
+
+          escreva("PERGUNTA 4: Quem foi o responsável por derrotar definitivamente o Freeza quando ele chegou à Terra em sua forma cibernética?\n")
+          escreva("A) Trunks\n")
+          escreva("B) Goku\n")
+          escreva("C) Trunks do Futuro\n")
+          escreva("D) Cell\n")
+          escreva("\nSua resposta: ")
+          leia(resposta)
+          
+          se (resposta == "C" ou resposta == "c") 
+          {
+            escreva("\nCORRETO! Trunks do Futuro veio e derrotou Freeza com sua espada.\n")
+            acertos = acertos + 1
+          }
+          senao 
+          {
+            escreva("\nERRADO! A resposta correta era a alternativa C.\n")
+            erros = erros + 1
+          }
+          u.aguarde(2500)
+          limpa()
+
+    
+          
+      
+          pontuacao = acertos * 10 
+          
+          escreva("=========================================\n")
+          escreva("            FIM DO QUIZ!                 \n")
+          escreva("=========================================\n")
+          escreva("Total de Acertos: ", acertos, "\n")
+          escreva("Total de Erros: ", erros, "\n")
+          escreva("Pontuação Final: ", pontuacao, " pontos.\n")
+          escreva("=========================================\n\n")
+          
+    
+       
+          se (acertos == 4)
+          {
+            escreva("Incrível! Você alcançou o Instinto Superior! 👑🐉\n\n")
+          }
+          senao se (acertos >= 2)
+          {
+            escreva("Muito bom! Você é um Super Saiyajin respeitável. 🔥\n\n")
+          }
+          senao
+          {
+            escreva("Você lutou como o Yamcha... Precisa treinar mais na sala do tempo! 🥋\n\n")
+          }
+          
+          escreva("Pressione Enter para voltar ao menu...")
+          leia(resposta) 
+          limpa()
+          pare
+          
+        caso 2:
+          
+          escreva("=========================================\n")
+          escreva("            REGRAS DO QUIZ               \n")
+          escreva("=========================================\n")
+          escreva("1. O quiz contém 4 perguntas sobre o universo de Dragon Ball.\n")
+          escreva("2. Use apenas as letras A, B, C ou D para responder.\n")
+          escreva("3. Cada acerto soma 10 pontos à sua pontuação final.\n")
+          escreva("4. Respostas incorretas não tiram pontos.\n")
+          escreva("=========================================\n\n")
+          escreva("Pressione Enter para voltar ao menu...")
+          leia(resposta)
+          limpa()
+          pare
+          
+        caso 3:
+        
+          escreva("Obrigado por jogar! KAMEHAMEHA!! 💥\n")
+          u.aguarde(1500)
+          pare
+          
+        caso contrario:
+          
+          escreva("Opção Inválida! Escolha 1, 2 ou 3.\n")
+          u.aguarde(2000)
+          limpa()
+          pare
+      }
+    }
+  }
+}
